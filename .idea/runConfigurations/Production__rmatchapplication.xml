@@ -7,7 +7,9 @@
     <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
     <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
     <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-    <envs />
+    <envs>
+      <env name="SECRET_KEY_BASE" value="059a8b6f622fb8828f56b5fa982c845bca5f0968ac136416070e18594ccbb5c78881aa5303b56edbd5adbfc63ad8a62889fa40877716f8f862b9d5afb93fb116" />
+    </envs>
     <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
     <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
     <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
@@ -15,7 +17,7 @@
     <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
     <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="127.0.0.1" />
     <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="DUMMY_APP" VALUE="test/dummy" />
-    <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
+    <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="default" />
     <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="production" />
     <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
     <method />
