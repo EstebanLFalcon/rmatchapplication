@@ -16,7 +16,7 @@
   <p class="lead"><%= @parameters[1] %></p>
     <%= form_for :question do |f| %>
         <% @parameters[2].each_with_index do |answer, index| %>
-            <%= radio_button_tag(:answer, index + 1) %>
+            <%= radio_button_tag(:answer, index + 1, (index == 0)) %>
             <%= label_tag(:answer, answer) %>
         <% end %>
         <div class="row">
@@ -24,8 +24,8 @@
         <label>¿Qué tan importante es este tema para tí?
 
           <select name="importance">
-            <option value="1">1</option>
-            <option value="2" selected="selected">2</option>
+            <option value="1" selected="selected">1</option>
+            <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5</option>
@@ -35,8 +35,10 @@
 
         </div>
         </div>
+        <%= text_field_tag(:id, @parameters[0], {:type => 'hidden'} ) %>
+        <%= text_field_tag(:session_data, @parameters[3], {:type => 'hidden'} ) %>
         <div class="small-4 columns">
-          <input type="submit" class="button" value="Submit">
+          <input type="submit" class="button" name="commit" value="Save Question" data-disable-with="Save Question" />
         </div>
     <% end %>
   </div>
