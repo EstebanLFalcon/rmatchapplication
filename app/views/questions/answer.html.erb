@@ -8,9 +8,26 @@
     <link rel="stylesheet" href="//dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
   </head>
 </head>
-<body style="background-image:url(<%=asset_path(@parameters[1])%>)">
-<h1>Políticamente, te identificas mejor con <%= @parameters[0] %></h1>
-<img src=<%= @parameters[2] %>>
+
+<div class="callout large">
+<div class="row column text-center">
+  <h1 style="color:<%= @parameters[3] %>;">Políticamente, te identificas mejor con <%= @parameters[0] %></h1>
+  <p class="lead">Ahora puedes volver a tomar la encuesta o visitar la página del candidato.</p>
+  <a href="/" class="button large">Volver a tomar</a>
+  <a href="<%= @parameters[4] %>" class="button large hollow">Visitar página</a>
+</div>
+</div>
+
+<div class="row">
+  <div class="medium-6 columns medium-push-6">
+    <img class="thumbnail" src=<%= @parameters[2] %>>
+  </div>
+  <div class="medium-6 columns medium-pull-6">
+    <h2><%= @parameters[0] %></h2>
+    <p><%= @parameters[5] %></p>
+  </div>
+</div>
+
 
 <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="//dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
